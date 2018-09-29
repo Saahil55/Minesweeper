@@ -25,7 +25,7 @@ public class Psyss9Main extends MouseAdapter {
 	
 	public Psyss9Main(){
 		guiFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
-		guiFrame.setTitle("Minesweeper");
+		guiFrame.setTitle("Minesweeper | Saahil Shah");
 		guiFrame.setLayout(new BorderLayout(10,10)); 
 		
 		JPanel panel1 = new JPanel();
