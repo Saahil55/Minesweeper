@@ -123,7 +123,6 @@ public class Board {
 				int nearbyMines = countSurrounding(i,j);
 				button2.greenNum(nearbyMines);
 				button2.investigated = true;
-				
 			}
 		}	
 	}

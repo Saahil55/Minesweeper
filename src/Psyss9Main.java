@@ -10,15 +10,13 @@ import javax.swing.SwingUtilities;
 public class Psyss9Main extends MouseAdapter {
 	final static int width = 10;  // Width of the Board
 	final static int height = 10;  // Height of the Board
-	final static int num_mines = 9;
-	
+	final static int num_mines = 9; // Number of mines on Board
 	final static int pixelheight = 100;
 	final static int pixelwidth = 100;
 	
 	JFrame guiFrame = new JFrame();
 	Board board = new Board();
 
-	
 	public static void main(String[] args) {
 		new Psyss9Main();
 	}
@@ -64,7 +62,6 @@ public class Psyss9Main extends MouseAdapter {
 		}
 	}
 
-
 	public void leftclick(BoardSquareButton button1, int x, int y) {
 		if (button1.mine == true) {
 			board.finished();
@@ -97,11 +94,9 @@ public class Psyss9Main extends MouseAdapter {
 				board.createMines(num_mines);
 			}
 		}	
-	}
+	}	
 		
-		
-	public void rightclick(BoardSquareButton button1)
-	{
+	public void rightclick(BoardSquareButton button1) {
 		
 		if(button1.potentialmine == true) {
 			button1.initialise();
