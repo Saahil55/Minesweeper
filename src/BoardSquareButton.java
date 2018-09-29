@@ -4,8 +4,7 @@ import java.awt.Dimension;
 
 import javax.swing.JButton;
 
-public class BoardSquareButton extends JButton
-{
+public class BoardSquareButton extends JButton {
 	/**
 	 * 
 	 */
@@ -17,19 +16,15 @@ public class BoardSquareButton extends JButton
 	boolean potentialmine; // Where the user has suggested the button is a potential mine
 	
 	
-	public BoardSquareButton(int x, int y, int pixelheight, int pixelwidth)
-	{
+	public BoardSquareButton(int x, int y, int pixelheight, int pixelwidth) {
 		this.setPreferredSize(new Dimension(pixelheight, pixelwidth));
 		this.setMinimumSize(new Dimension(60, 60));
 		this.initialise();
-		
 		xcoordinate = x;
 		ycoordinate = y; 
-		
 	}
 	
-	public void initialise() 
-	{
+	public void initialise() {
 		this.setText("?");
 		this.setFont( new Font("Ariel", Font.BOLD, 30));
 		this.setBackground(Color.GRAY);
@@ -38,29 +33,25 @@ public class BoardSquareButton extends JButton
 		potentialmine = false;
 	}
 
-	public void redX()
-	{
+	public void redX() {
 		this.setText("X"); 
 	    this.setFont( new Font("Ariel", Font.BOLD, 30));
 		this.setBackground(Color.RED); 
 	}
 	
-	public void redcolour()
-	{
+	public void redcolour() {
 		this.setText("?");
 		this.setFont( new Font("Ariel", Font.BOLD, 30));
 		this.setBackground(Color.RED);
 	}
 	
-	public void greenNum(int nearbyMines) 
-	{
+	public void greenNum(int nearbyMines) {
 		this.setText(String.valueOf(nearbyMines));
 		this.setFont( new Font("Ariel", Font.BOLD, 30));
 		this.setBackground(Color.GREEN);
 	}
 	
-	public void orangeX()
-	{
+	public void orangeX() {
 		this.setText("X");
 	    this.setFont( new Font("Ariel", Font.BOLD, 30));
 		this.setBackground(Color.ORANGE); 
