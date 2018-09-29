@@ -39,7 +39,6 @@ public class Psyss9Main extends MouseAdapter {
 		
 		board.initialiseAll();
 		board.createMines(num_mines);
-		
 		guiFrame.add(panel1,BorderLayout.CENTER);
 		guiFrame.pack();
 		guiFrame.setVisible(true);
@@ -53,7 +52,6 @@ public class Psyss9Main extends MouseAdapter {
 					if (SwingUtilities.isLeftMouseButton(e)){
 						this.leftclick(button1,j,i);
 					}
-				
 					if (SwingUtilities.isRightMouseButton(e)) {
 						this.rightclick(button1);
 					}
@@ -74,7 +72,6 @@ public class Psyss9Main extends MouseAdapter {
 		}
 		else {
 			int nearbyMines = board.countSurrounding(x, y);
-			
 			button1.greenNum(nearbyMines);
 			button1.investigated =true;
 			guiFrame.repaint();
@@ -108,5 +105,4 @@ public class Psyss9Main extends MouseAdapter {
 			guiFrame.repaint();
 		}
 	}
-	
 }

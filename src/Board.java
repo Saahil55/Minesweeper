@@ -35,7 +35,6 @@ public class Board {
 				rand_x =rand.nextInt((width));
 				button = getButton(rand_x,rand_y);
 			}
-			
 			button.mine = true;
 		}
 	}
@@ -75,7 +74,6 @@ public class Board {
 	}
 	
 	public int countSurrounding(int x, int y) {
-
 		int lowerX = x - 1;
         lowerX = lowerX < 0 ? 0 : lowerX;
         int highX = x + 2;
@@ -117,7 +115,6 @@ public class Board {
 				if (countSurrounding(i,j)== 0 && button2.investigated == false && getButton(i,j) != getButton(x,y)) {
 					itterate(i,j);
 				}
-				
 				int nearbyMines = countSurrounding(i,j);
 				button2.greenNum(nearbyMines);
 				button2.investigated = true;
@@ -125,4 +122,3 @@ public class Board {
 		}	
 	}
 }
-     
