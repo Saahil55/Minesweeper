@@ -94,7 +94,6 @@ public class Psyss9Main extends MouseAdapter {
 	}	
 		
 	public void rightclick(BoardSquareButton button1) {
-		
 		if(button1.potentialmine == true) {
 			button1.initialise();
 			guiFrame.repaint();
