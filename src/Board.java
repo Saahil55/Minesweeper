@@ -30,7 +30,7 @@ public class Board {
 			int rand_x =rand.nextInt((width));
 			BoardSquareButton button= getButton(rand_x,rand_y);
 			
-			while(button.mine != false){	
+			while(button.mine != false) {	
 				rand_y =rand.nextInt((height));
 				rand_x =rand.nextInt((width));
 				button = getButton(rand_x,rand_y);
@@ -41,7 +41,6 @@ public class Board {
 	}
 	
 	public void finished() {
-		
 		for(int i=0;i<height;i++) {
 			for(int j=0;j<width;j++) {
 				BoardSquareButton button1 = buttonArray [i] [j];
@@ -100,7 +99,6 @@ public class Board {
         }
         return count;
 	}
-	
 	
 	public void itterate(int x, int y) {
 		int lowerX = x - 1;
