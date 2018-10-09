@@ -3,7 +3,7 @@
  
 ### Introduction
  This is my java implementation of Minesweeper. The source code files are: Board.java, BoardSquareButton.java and Psyss9Main.java.
- You can use my source code to play Minesweeper or edit it for your own project. The parameters of the game can also be modified e.g. how large the game board is, how many mines there are etc in the source code. 
+ You can use my source code to play Minesweeper or edit for your own project. The parameters of the game can also be modified e.g. how large the game board is, how many mines there are etc in the source code. 
  
 ### Game Instructions
  The game has a grid of buttons, which represent  potential locations for mines. Initially all of the buttons are
