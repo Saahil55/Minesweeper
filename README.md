@@ -13,7 +13,7 @@ tells you how many mines are immediately surrounding it –including diagonally.
 If you find a square with no mines around it then the game will automatically explore the
 surrounding (non-mine) squares for you, as if you have clicked on them.
 You can right click on buttons to mark/remember potential mines (the button will turn red).
-If you find all of the non-mine squares, then you win. 
+If you find all of the non-mine squares, you win. 
 
 ### Screenshots
  
